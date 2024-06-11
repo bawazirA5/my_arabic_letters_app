@@ -1,0 +1,45 @@
+name: my_arabic_letters_app
+description: An educational project to teach arabic language letters.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.0.0
+  audioplayers: ^5.1.0
+  motion_tab_bar_v2: ^0.3.0
+  webview_flutter: ^4.2.4
+  flutter_native_splash: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+  launcher_name: ^1.0.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audios/
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/logo.png"
+
+launcher_name:
+  default: "حروفي العربية"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logo/logo.png
+  android_gravity: fill_horizontal
